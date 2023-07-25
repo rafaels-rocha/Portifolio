@@ -237,3 +237,17 @@ i.menu-mobile{
     top: 0;
     border-radius: 50%;
 }
+
+
+.caousel-control-prev{
+    margin-left: -8rem;
+
+}
+
+.caousel-control-next{
+    margin-right: -8rem;
+}
+
+.carousel-indicators{
+    margin-bottom: -35px;
+}
