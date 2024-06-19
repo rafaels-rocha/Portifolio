@@ -1,5 +1,6 @@
 // Abre e fecha menu lateral em modo mobile
 
+
 const menuMobile = document.querySelector('.menu-mobile');
 const body = document.querySelector('body');
 
@@ -22,6 +23,7 @@ navItem.forEach(item => {
         }
     })
 })
+
 
 
 // Animar atributos
