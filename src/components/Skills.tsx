@@ -10,12 +10,12 @@ const skills = [
   {
     category: "Backend",
     icon: <Server className="w-6 h-6" />,
-    technologies: ["PHP", "Node.js", "REST APIs"]
+    technologies: ["PHP", "Next.js", "REST APIs"]
   },
   {
     category: "Database",
     icon: <Database className="w-6 h-6" />,
-    technologies: ["MySQL"]
+    technologies: ["MySQL","Postgresql"]
   },
   {
     category: "Others",
