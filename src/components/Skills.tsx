@@ -1,26 +1,26 @@
 import React from 'react';
-import { Code2, Database, Globe, Server } from 'lucide-react';
+import { Code2, Database, Globe, Server, TrendingUp, ClipboardCheck } from 'lucide-react';
 
 const skills = [
   {
-    category: "Frontend",
+    category: "Gestão Operacional",
+    icon: <ClipboardCheck className="w-6 h-6" />,
+    technologies: ["Gestão de Estoque", "Controle de Inventário", "Processos Logísticos", "Auditoria Operacional"]
+  },
+  {
+    category: "Análise & Otimização",
+    icon: <TrendingUp className="w-6 h-6" />,
+    technologies: ["Análise de Processos", "Identificação de GAPs", "Melhoria Contínua", "Business Intelligence"]
+  },
+  {
+    category: "Tecnologia Aplicada",
     icon: <Globe className="w-6 h-6" />,
-    technologies: ["HTML", "CSS", "JavaScript", "React"]
+    technologies: ["React.js", "Next.js", "Automação de Processos", "Soluções Web"]
   },
   {
-    category: "Backend",
-    icon: <Server className="w-6 h-6" />,
-    technologies: ["PHP", "Next.js", "REST APIs"]
-  },
-  {
-    category: "Database",
+    category: "Dados & Sistemas",
     icon: <Database className="w-6 h-6" />,
-    technologies: ["MySQL","Postgresql"]
-  },
-  {
-    category: "Others",
-    icon: <Code2 className="w-6 h-6" />,
-    technologies: ["Git"]
+    technologies: ["SQL", "MySQL", "PostgreSQL", "Análise de Dados", "Rastreabilidade"]
   }
 ];
 

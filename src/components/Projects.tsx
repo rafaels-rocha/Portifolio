@@ -1,94 +1,124 @@
 import React from 'react';
-import { ExternalLink, Github, StickyNote  } from 'lucide-react';
-import Acessomix from '../img/acessomix.png'; // Importa a imagem
+import { TrendingUp, Package, BarChart3, CheckCircle, ExternalLink } from 'lucide-react';
 
-const projects = [
+const sigoproFeatures = [
   {
-    title: "Analise de padrão em casa de aposta",
-    description: "Uma analise do padrão do jogo AVIATOR com API da Openai.",
-    image: "https://images.unsplash.com/photo-1653609848250-0de9437393f4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    technologies: ["Node.js", "Python", "MySQL"]
+    icon: <Package className="w-8 h-8 text-blue-500" />,
+    title: "Gestão de Estoque Inteligente",
+    description: "Controle preciso de inventário, rastreabilidade de produtos e alertas automáticos de divergências."
   },
   {
-    title: "Laning page com React",
-    description: "Projeto de lading page com REACT.",
-    image: "https://images.unsplash.com/photo-1605725961202-18c2678ea41e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    technologies: ["React", "CSS", "JavaScript"],
-    github: "https://github.com/rafaels-rocha/clinic_online",
-    live: "https://rafaels-rocha.github.io/clinic_online/"
+    icon: <TrendingUp className="w-8 h-8 text-blue-500" />,
+    title: "Otimização de Processos",
+    description: "Automação de rotinas operacionais que eliminam retrabalho e aumentam a eficiência do time."
   },
- {
-  title: "Sistema de Controle de Acesso",
-  description: "Sistema real desenvolvido em Next.js para gerenciamento de ingressos e controle de entrada em eventos.",
-  image: Acessomix,
-  note: "Projeto real. Link e repositório não disponíveis por questões contratuais.",
-  technologies: ["Next.js", "React", "Tailwind CSS", "MySQL", "Node.js"],
-  github: "", 
-  live: "",   
-},
-{
-  title: "Sistema de Venda de Ingressos para Cinema",
-  description: "Sistema desenvolvido com Next.js e Tailwind CSS para venda de ingressos e controle de sessões, com foco em interface moderna e intuitiva.",
-  image: "https://images.unsplash.com/photo-1608170825938-a8ea0305d46c?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  technologies: ["Next.js", "React", "Tailwind CSS", "Node.js"],
-  github: "",
-  live: "",
-  note: "Projeto autoral inspirado em demandas reais de cinemas locais. Código e link indisponíveis por questões contratuais."
-}
+  {
+    icon: <BarChart3 className="w-8 h-8 text-blue-500" />,
+    title: "Análise de Dados em Tempo Real",
+    description: "Dashboards e relatórios que facilitam a tomada de decisão baseada em dados concretos."
+  },
+  {
+    icon: <CheckCircle className="w-8 h-8 text-blue-500" />,
+    title: "Compliance e Auditoria",
+    description: "Estrutura preparada para auditorias com rastreabilidade completa de operações."
+  }
+];
 
-
+const results = [
+  "Redução significativa de divergências de estoque",
+  "Aumento da produtividade da equipe operacional",
+  "Melhoria na rastreabilidade de dados críticos",
+  "Facilita processos de auditoria e classificação",
+  "Integração eficiente entre setores da operação"
 ];
 
 export default function Projects() {
   return (
-    <section className="py-20" id="projects">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50" id="projects">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12 text-center">Projetos em Destaque</h2>
-        <div className="grid md:grid-cols-2 gap-12">
-          {projects.map((project) => (
-            <div key={project.title} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-            {project.note && (
-  <div className="flex items-start gap-2 text-sm italic text-gray-400 mb-4">
-    <StickyNote className="w-4 h-4 mt-0.5" />
-    <p>{project.note}</p>
-  </div>
-)}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => (
-                    <span key={tech} className="bg-gray-100 px-3 py-1 rounded-full text-sm">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-4">
-                  <a 
-                    href={project.github}
-                    target="_blank"
-                    className="flex items-center text-gray-700 hover:text-blue-600"
-                  >
-                    <Github className="w-5 h-5 mr-2" />
-                    Código
-                  </a>
-                  <a 
-                    href={project.live}
-                    target="_blank"
-                    className="flex items-center text-gray-700 hover:text-blue-600"
-                  >
-                    <ExternalLink className="w-5 h-5 mr-2" />
-                    Demo
-                  </a>
-                </div>
+        <h2 className="text-3xl font-bold mb-4 text-center">Projeto Principal</h2>
+        <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          Solução desenvolvida a partir da identificação de GAPs reais na operação de revendas AMBEV
+        </p>
+
+        {/* SigoPro Hero Section */}
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden mb-12 max-w-6xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-12">
+            <div className="flex items-center mb-6">
+              <div className="bg-white/20 p-4 rounded-lg mr-4">
+                <Package className="w-12 h-12" />
+              </div>
+              <div>
+                <h3 className="text-4xl font-bold mb-2">SigoPro</h3>
+                <p className="text-blue-100 text-xl">Sistema de Gestão e Otimização de Processos</p>
               </div>
             </div>
-          ))}
+            <p className="text-lg text-blue-50 leading-relaxed">
+              Plataforma desenvolvida para resolver desafios reais identificados durante a atuação no Grupo Revalle (revenda AMBEV). 
+              O SigoPro nasceu da necessidade de melhorar a eficiência operacional, facilitar a rastreabilidade de dados 
+              e proporcionar controle preciso sobre processos críticos em distribuidoras.
+            </p>
+            <div className="mt-6">
+              <a 
+                href="https://sigopro.com.br" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
+              >
+                Acessar SigoPro
+                <ExternalLink className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          <div className="p-12">
+            <h4 className="text-2xl font-bold mb-8 text-gray-800">Funcionalidades Principais</h4>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {sigoproFeatures.map((feature, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    {feature.icon}
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-lg mb-2">{feature.title}</h5>
+                    <p className="text-gray-600">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-blue-50 rounded-xl p-8">
+              <h4 className="text-2xl font-bold mb-6 text-gray-800">Resultados e Impactos</h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                {results.map((result, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                    <p className="text-gray-700">{result}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-gray-50 rounded-lg border-l-4 border-blue-600">
+              <p className="text-sm text-gray-600 italic">
+                <strong>Contexto:</strong> O SigoPro é resultado direto da experiência prática em operações logísticas 
+                e da identificação de oportunidades de melhoria durante processos de auditoria e gestão de estoque. 
+                Representa a transformação de conhecimento operacional em solução tecnológica aplicável.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Stack Técnico */}
+        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
+          <h4 className="text-xl font-bold mb-6 text-center">Stack Tecnológico</h4>
+          <div className="flex flex-wrap justify-center gap-3">
+            {["React", "Nest.js", "Node.js", "MySQL", "Tailwind CSS", "REST APIs"].map((tech) => (
+              <span key={tech} className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

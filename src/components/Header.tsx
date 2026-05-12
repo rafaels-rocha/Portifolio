@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
-import myImage from '../img/1638070307629.jpeg'; // Importa a imagem
+import myImage from '../img/profile.jpg'; // Importa a imagem
 
 
 export default function Header() {
@@ -11,10 +11,16 @@ export default function Header() {
           <div>
             <h1 className="text-5xl font-bold mb-4">
               Olá, eu sou<br />
-              <span className="text-blue-400">Rafael Rocha</span>
+              <span className="text-blue-400">Rafael Rocha Santos</span>
             </h1>
             <p className="text-gray-300 text-xl mb-8">
-            Desenvolvedor Fullstack dedicado em criar soluções Web com ênfase em diversos tipos de necessidades individuais.
+              Analista de Processos | Gestão Operacional | Soluções em Logística
+            </p>
+            <p className="text-gray-400 text-base mb-8">
+              Especialista em operações logísticas e gestão de estoque em revendas AMBEV, com foco em identificação de GAPs operacionais 
+              e desenvolvimento de soluções sistêmicas. Co-fundador da SIGOPRO, plataforma criada para otimizar processos, 
+              melhorar rastreabilidade de dados e aumentar a eficiência operacional em distribuidoras. 
+              Experiência em auditoria, controle de estoque e transformação digital de processos.
             </p>
             <div className="flex gap-4">
               <a href="https://github.com/rafaels-rocha" className="hover:text-blue-400 transition-colors">

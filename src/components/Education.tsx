@@ -4,32 +4,33 @@ import { GraduationCap, Award } from 'lucide-react';
 const educationItems = [
   {
     type: "Graduação",
-    title: "Sistema da Informação",
+    title: "Bacharelado em Tecnologia da Informação/Sistemas da Informação",
     institution: "Estácio",
-    period: "2023 - 2026",
-    description: "Formação em desenvolvimento de software com foco em tecnologias web e mobile."
+    period: "Janeiro 2023 - Fevereiro 2026",
+    description: "Formação em desenvolvimento de software com foco em tecnologias web, mobile e sistemas da informação."
   },
   {
     type: "Técnico",
-    title: "Técnico em T.I",
-    institution: "SENAI",
-    period: "2022 - 2024",
-    description: "Curso completo de Técnico em T.I"
+    title: "Ensino Técnico em Tecnologia da Informação",
+    institution: "SENAI CIMATEC",
+    period: "Novembro 2022 - Junho 2024",
+    description: "Curso técnico completo em Tecnologia da Informação com foco em desenvolvimento e infraestrutura."
   }
 ];
 
 const certifications = [
   {
-    title: "Técnico em T.I",
-    institution: "SENAI",
-    year: "2022 - 2024",
-    description: "Curso completo de Técnico em T.I"
+    title: "Bootcamp Orange Tech+ Inter",
+    institution: "DIO (Digital Innovation One)",
+    year: "2022",
+    duration: "78 horas",
+    description: "Bootcamp focado em Engenharia de Software com práticas modernas de desenvolvimento"
   },
   {
-    title: "React.js Avançado",
-    institution: "Nome do Curso",
-    year: "2023",
-    description: "Especialização em React.js e suas melhores práticas"
+    title: "Ensino Técnico em Tecnologia da Informação",
+    institution: "SENAI CIMATEC",
+    year: "2022 - 2024",
+    description: "Certificação técnica completa em TI"
   }
 ];
 
